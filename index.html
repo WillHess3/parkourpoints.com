@@ -1,9 +1,88 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link rel="stylesheet" href="stylesheet.css"/>
     </head>
     <body>
-        <h1>Parkour Points</h1>
+        <div class="title">
+            <h1>Parkour Points</h1>
+        </div>
+        <div class="header">
+            <button class="header-button">Home</button>
+            <button class="header-button">Upcoming</button>
+            <button class="header-button">Leaderboards</button>
+            <button class="header-button">Athletes</button>
+        </div>
+        <div class="athlete-highlight">
+            <h2 id="athlete-highlight-title">Athlete of the Month</h2>
+            <div class="athlete-highlight-body">
+                <img src="images/athleteOfTheMonth.png" id="athlete-of-the-month-image"/>
+                <div class="highlighted-athlete-info">
+                    <h3 id="athlete-name">Will Hess</h3>
+                    <p id="athlete-description">Will Hess is a great athlete who placed second in the mens division 
+                    for speed at spl 3. He has been working hard and training for the competition for years. He would 
+                    cheer for his competitors and met lots of new people. He is very excited for spl 4.</p>
+                    <button id="highlighted-athlete-lookup">View Stats</button>
+                </div>
+            </div>
+        </div>
+        <div class="leaderboards">
+            <h2 id="leaderboards-title">Leaderboards</h2>
+            <div class="featured-leaderboards">
+                <div class="featured-leaderboard">
+                    <h3 class="featured-leaderboard-name">Hub Speed Comp 1/25/25</h3>
+                    <p class="featured-leaderboard-date"><strong>Date:</strong> 1/25/25</p>
+                    <p class="featured-leaderboard-type"><strong>Type:</strong> Speed</p>
+                    <button class="view-leaderboard-button">View Leaderboard</button>
+                </div>
+                <div class="featured-leaderboard">
+                    <h3 class="featured-leaderboard-name">Hub Speed Comp 1/25/25</h3>
+                    <p class="featured-leaderboard-date"><strong>Date:</strong> 1/25/25</p>
+                    <p class="featured-leaderboard-type"><strong>Type:</strong> Speed</p>
+                    <button class="view-leaderboard-button">View Leaderboard</button>
+                </div>
+                <div class="featured-leaderboard">
+                    <h3 class="featured-leaderboard-name">Hub Speed Comp 1/25/25</h3>
+                    <p class="featured-leaderboard-date"><strong>Date:</strong> 1/25/25</p>
+                    <p class="featured-leaderboard-type"><strong>Type:</strong> Speed</p>
+                    <button class="view-leaderboard-button">View Leaderboard</button>
+                </div>
+            </div>
+            <button id="leaderboard-lookup">Leaderboard Search</button>
+        </div>
+        <div class="athlete-search">
+            <h2 id="athlete-search-title">Athlete Search</h2>
+            <div class="athlete-search-form">
+                <input id="athlete-search-bar" />
+                <button id="athlete-search-button">Search</button>
+            </div>
+        </div>
+        <div class="upcoming-comps">
+            <h2 id="upcoming-comps-title">Upcoming Competitions</h2>
+            <div class="upcoming-comps-list">
+                <div class="upcoming-comp upcoming-comp-light">
+                    <h3 class="upcoming-comp-name">Hub Speed Comp 1/25/25</h3>
+                    <p class="upcoming-comp-info"><strong>Gym:</strong> Hub PTC</p>
+                    <p class="upcoming-comp-info"><strong>Type:</strong> Speed</p>
+                    <p class="upcoming-comp-info"><strong>Date:</strong> 1/25/2025</p>
+                    <button class="upcoming-comp-more-info">More Info</button>
+                </div>
+                <div class="upcoming-comp upcoming-comp-dark">
+                    <h3 class="upcoming-comp-name">Hub Speed Comp 1/25/25</h3>
+                    <p class="upcoming-comp-info"><strong>Gym:</strong> Hub PTC</p>
+                    <p class="upcoming-comp-info"><strong>Type:</strong> Speed</p>
+                    <p class="upcoming-comp-info"><strong>Date:</strong> 1/25/2025</p>
+                    <button class="upcoming-comp-more-info">More Info</button>
+                </div>
+                <div class="upcoming-comp upcoming-comp-light">
+                    <h3 class="upcoming-comp-name">Hub Speed Comp 1/25/25</h3>
+                    <p class="upcoming-comp-info"><strong>Gym:</strong> Hub PTC</p>
+                    <p class="upcoming-comp-info"><strong>Type:</strong> Speed</p>
+                    <p class="upcoming-comp-info"><strong>Date:</strong> 1/25/2025</p>
+                    <button class="upcoming-comp-more-info">More Info</button>
+                </div>
+            </div>
+            <button id="all-upcoming-comps">See All Upcoming Competitions</button>
+        </div>
     </body>
 </html>
