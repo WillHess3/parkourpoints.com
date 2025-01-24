@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/athletesStylesheet.css" />
+        <link rel="stylesheet" href="CSS/headerStylesheet.css" />
+
+        <script src="Javascript/headerButtons.js"></script>
+    </head>
+    <body>
+        <div class="title">
+            <h1>Athletes</h1>
+        </div>
+        <div class="header">
+            <button class="header-button" onclick="goToLink('index.html')">Home</button>
+            <button class="header-button" onclick="goToLink('upcoming.html')">Upcoming</button>
+            <button class="header-button" onclick="goToLink('leaderboards.html')">Leaderboards</button>
+            <button class="header-button" onclick="goToLink('athletes.html')">Athletes</button>
+        </div>
+        <div class="athletes">
+            <h2 class="instructions"> Search for an athlete's name</h2>
+            <div class="athlete-search">
+                <input id="athlete-search-bar" />
+                <button id="athlete-search-button">Search</button>
+            </div>
+            <div class="athlete-list">
+                <div class="athlete">
+                    <h3 class="athlete-name">Lorem ipsum</h3>
+                    <p class="athlete-info"><strong>Gym:</strong> tempor</p>
+                    <p class="athlete-info"><strong>Parkour Points:</strong> 10</p>
+                    <button class="view-stats-button">View Stats</button>
+                </div>
+                <div class="athlete">
+                    <h3 class="athlete-name">dolor sit</h3>
+                    <p class="athlete-info"><strong>Gym:</strong> incididunt ut labore</p>
+                    <p class="athlete-info"><strong>Parkour Points:</strong> 100</p>
+                    <button class="view-stats-button">View Stats</button>
+                </div>
+                <div class="athlete">
+                    <h3 class="athlete-name">consectetur adipiscing</h3>
+                    <p class="athlete-info"><strong>Gym:</strong> et</p>
+                    <p class="athlete-info"><strong>Parkour Points:</strong> 0</p>
+                    <button class="view-stats-button">View Stats</button>
+                </div>
+                <div class="athlete">
+                    <h3 class="athlete-name">sed do eiusmod</h3>
+                    <p class="athlete-info"><strong>Gym:</strong> dolore magna</p>
+                    <p class="athlete-info"><strong>Parkour Points:</strong> 69</p>
+                    <button class="view-stats-button">View Stats</button>
+                </div>
+            </div>
+        </div>
+        <script src="Javascript/athleteSearch.js"></script>
+    </body>
+</html>

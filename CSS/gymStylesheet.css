@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
+
+body {
+    background-color: #E7E5DF;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-size: 6rem;
+    align-self: center;
+    margin: auto;
+    color: #E7E5DF;
+}
+
+.title {
+    height: 12rem;
+    background-color: #FE7F2D;
+    display: flex;
+}
+
+.gym-details {
+    background-color: #FE7F2D;
+    margin: 100px 10vw 100px 10vw;
+    padding: 2.5%;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+}
+
+#gym-picture {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+    flex-shrink: 0;
+    margin-right: 50px;
+}
+
+.gym-info-section {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    flex-grow: 1;
+    height: 500px;
+}
+
+#gym-title {
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-size: 4rem;
+    color: #E7E5DF;
+    margin: 0 0 20px 0;
+}
+
+.gym-info {
+    font-family: "Radio Canada", serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #E7E5DF;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+#affiliated-athletes{
+    flex-grow:1;
+}
+
+#website-button {
+    font-family: "Radio Canada", serif;
+    font-weight: 600;
+    font-size: 2rem;
+    background-color: #4A8FE7;
+    border-radius: 10px;
+    border-style: hidden;
+    border-bottom-style: solid;
+    border-width: 5px;
+    border-color: #305fb8;
+    color: #E7E5DF;
+    display: inline-block;
+    align-self: flex-start;
+    justify-self:flex-end;
+    padding: 1rem;
+    transition: 0.1s;
+}
+
+#website-button:hover {
+    border-width: 2px;
+}
+
+#website-button:active {
+    background-color: #305fb8;
+}
+
+.leaderboards {
+    background-color: #4A8FE7;
+    margin: 100px 10vw 100px 10vw;
+    padding: 2.5%;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#leaderboards-title {
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-size: 4rem;
+    color: #E7E5DF;
+    margin: 0 0 20px 0;
+}
+
+.leaderboard-list {
+    margin-top: 30px;
+}
+
+.competition {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.competition:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.competition:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.competition:nth-child(2n+1) {
+    background-color: #FE7F2D;
+}
+
+.competition:nth-child(2n) {
+    background-color: #cf5d15;
+}
+
+.competition-name {
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #E7E5DF;
+    margin: 10px;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.competition-info {
+    font-family: "Radio Canada", serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #E7E5DF;
+    margin: 10px 30px 10px 30px;
+    align-self: center;
+}
+
+.view-leaderboard-button {
+    font-family: "Radio Canada", serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    background-color: #4A8FE7;
+    border-radius: 10px;
+    border-style: hidden;
+    border-bottom-style: solid;
+    border-width: 5px;
+    border-color: #305fb8;
+    color: #E7E5DF;
+    display: inline-block;
+    padding: .25rem;
+    transition: 0.1s;
+    margin: 0px 30px 5px 30px;
+    align-self: flex-end;
+}
+
+.view-leaderboard-button:hover {
+    border-width: 2px;
+}
+
+.view-leaderboard-button:active {
+    background-color: #305fb8;
+}
+
+.affiliated-athletes-section {
+    background-color: #393E41;
+    margin: 100px 10vw 100px 10vw;
+    padding: 2.5%;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#affiliated-athletes-title {
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-size: 4rem;
+    color: #E7E5DF;
+    margin: 0 0 20px 0;
+}
+
+.athlete-list {
+    margin-top: 30px;
+}
+
+.athlete {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.athlete:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.athlete:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.athlete:nth-child(2n+1) {
+    background-color: #E7E5DF;
+}
+
+.athlete:nth-child(2n) {
+    background-color: #bfb9ad;
+}
+
+.athlete-name {
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #393E41;
+    margin: 10px;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.athlete-info {
+    font-family: "Radio Canada", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #393E41;
+    margin: 10px 30px 10px 30px;
+    align-self: center;
+}
+
+.view-stats-button {
+    font-family: "Radio Canada", serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    background-color: #393E41;
+    border-radius: 10px;
+    border-style: hidden;
+    border-bottom-style: solid;
+    border-width: 5px;
+    border-color: #222628;
+    color: #E7E5DF;
+    display: inline-block;
+    padding: .25rem;
+    transition: 0.1s;
+    margin: 0px 30px 8px 30px;
+    align-self: flex-end;
+}
+
+.view-stats-button:hover {
+    border-width: 2px;
+}
+
+.view-stats-button:active {
+    background-color: #222628
+}
+
+.upcoming-comps {
+    background-color: #BBE6E4;
+    border-color: #393E41;
+    border-width: 5px;
+    border-style: solid;
+    margin: 100px 10vw 100px 10vw;
+    padding: 2.5%;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#upcoming-comps-title {
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-size: 4rem;
+    color: #393E41;
+    margin: 0 0 20px 0;
+}
+
+.upcoming-comp {
+    display: flex;
+    align-items: center;
+}
+
+.upcoming-comp:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.upcoming-comp:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.upcoming-comp:nth-child(2n+1) {
+    background-color: #4A8FE7;
+}
+
+.upcoming-comp:nth-child(2n) {
+    background-color: #305fb8;
+}
+
+.upcoming-comp-name {
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #E7E5DF;
+    margin: 10px;
+    flex-grow: 1;
+    text-align:left;
+}
+
+.upcoming-comp-info {
+    font-family: "Radio Canada", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #E7E5DF;
+    margin: 10px 30px 10px 30px;
+    align-self: center;
+}
+
+.upcoming-comp-more-info {
+    font-family: "Radio Canada", serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    background-color: #FE7F2D;
+    border-radius: 10px;
+    border-style: hidden;
+    border-bottom-style: solid;
+    border-width: 5px;
+    border-color: #cf5d15;
+    color: #E7E5DF;
+    display: inline-block;
+    padding: .25rem;
+    transition: 0.1s;
+    margin: 0px 30px 8px 30px;
+    align-self: flex-end;
+}
+
+.upcoming-comp-more-info:hover {
+    border-width: 2px;
+}
+
+.upcoming-comp-more-info:active {
+    background-color: #cf5d15;
+}

@@ -21,40 +21,6 @@ h1 {
     display: flex;
 }
 
-.header {
-    display: flex;
-    height: 6rem;
-    background-color: #393E41;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.header-button {
-    width: 25vw;
-    font-family: "Radio Canada", serif;
-    font-weight: 600;
-    color: #E7E5DF;
-    background-color: #393E41;
-    font-size: 3rem;
-    margin: 0px;
-    border-color: #E7E5DF;
-    border-width: 2px;
-    border-style: solid;
-    transition: 0.2s;
-}
-
-.header-button:hover {
-    color: #393E41;
-    background-color: #E7E5DF;
-    font-size: 3.2rem;
-    border-color: #393E41;
-}
-
-.header-button:active{
-    opacity: 0.9;
-}
-
 h2 {
     font-family: "Black Ops One", serif;
     font-weight: 400;
@@ -183,7 +149,7 @@ h2 {
 .featured-leaderboard-name {
     font-family: "Black Ops One", serif;
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     color: #393E41;
     margin-top: 20px;
     text-align: center;
@@ -348,21 +314,31 @@ h2 {
     align-items:center;
 }
 
-.upcoming-comp-light {
+.upcoming-comp:nth-child(2n+1) {
     background-color: #4A8FE7;
 }
 
-.upcoming-comp-dark {
+.upcoming-comp:nth-child(2n) {
     background-color: #305fb8;
 }
 
+.upcoming-comp:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.upcoming-comp:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
 .upcoming-comp-name {
-    width: 600px;
     font-family: "Black Ops One", serif;
     font-weight: 400;
     font-size: 1.5rem;
     color: #E7E5DF;
     margin: 10px;
+    flex-grow:1;
 }
 
 .upcoming-comp-info {

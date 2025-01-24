@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
+
+.header {
+    display: flex;
+    height: 6rem;
+    background-color: #393E41;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-button {
+    width: 25vw;
+    font-family: "Radio Canada", serif;
+    font-weight: 600;
+    color: #E7E5DF;
+    background-color: #393E41;
+    font-size: 3rem;
+    margin: 0px;
+    border-color: #E7E5DF;
+    border-width: 2px;
+    border-style: solid;
+    transition: 0.2s;
+}
+
+.header-button:hover {
+    color: #393E41;
+    background-color: #E7E5DF;
+    font-size: 3.2rem;
+    border-color: #393E41;
+}
+
+.header-button:active {
+    opacity: 0.9;
+}
