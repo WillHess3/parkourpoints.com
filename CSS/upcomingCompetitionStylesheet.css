@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
+
+body {
+    background-color: #E7E5DF;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-size: 6rem;
+    align-self: center;
+    margin: auto;
+    color: #E7E5DF;
+}
+
+.title {
+    height: 12rem;
+    background-color: #4A8FE7;
+    display: flex;
+}
+
+.competition-stats {
+    background-color: #BBE6E4;
+    border-color: #393E41;
+    border-width: 5px;
+    border-style: solid;
+    margin: 100px 10vw 100px 10vw;
+    padding: 2.5%;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}

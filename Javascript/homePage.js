@@ -18,11 +18,25 @@ function seeFullUpcomingCompsList() {
     location.href = "upcoming.html";
 }
 
-//leaderboards
+//leaderboards list
 const allLeaderboardsButton = document.getElementById("leaderboard-lookup");
 
 allLeaderboardsButton.onclick = seeLeaderboardList;
 
 function seeLeaderboardList() {
     location.href = "leaderboards.html";
+}
+
+//see full leaderboard
+function seeFullLeaderboard() {
+    location.href = "leaderboard.html";
+}
+
+//athlete profile
+const athleteOfTheMonthButton = document.getElementById("highlighted-athlete-lookup");
+
+athleteOfTheMonthButton.onclick = seeAthleteProfile;
+
+function seeAthleteProfile() {
+    location.href = "athleteProfile.html";
 }

@@ -1,3 +1,4 @@
+//athlete search
 const searchBar = document.getElementById("athlete-search-bar");
 
 function setSearchBarInitialText() {
@@ -11,3 +12,8 @@ function setSearchBarInitialText() {
 }
 
 setSearchBarInitialText();
+
+//view athlete profile
+function viewAthleteProfile() {
+    location.href = "athleteProfile.html";
+}
