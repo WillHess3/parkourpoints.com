@@ -156,3 +156,7 @@ h1 {
 .view-leaderboard-button:active {
     background-color: #305fb8;
 }
+
+a {
+    text-decoration-color: #E7E5DF;
+}

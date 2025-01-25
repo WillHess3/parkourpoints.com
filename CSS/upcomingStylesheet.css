@@ -100,3 +100,7 @@ h1 {
 .upcoming-comp-more-info:active {
     background-color: #cf5d15;
 }
+
+a {
+    text-decoration-color: #E7E5DF;
+}

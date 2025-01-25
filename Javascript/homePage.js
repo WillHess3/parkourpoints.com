@@ -9,13 +9,18 @@ function searchAthlete() {
     location.href = "athletes.html";
 }
 
-//upcoming comps 
+//upcoming comps full list
 const allUpcomingCompsButton = document.getElementById("all-upcoming-comps");
 
 allUpcomingCompsButton.onclick = seeFullUpcomingCompsList;
 
 function seeFullUpcomingCompsList() {
     location.href = "upcoming.html";
+}
+
+//upcoming comp more info
+function upcomingCompMoreInfo() {
+    location.href = "upcomingCompetition.html";
 }
 
 //leaderboards list

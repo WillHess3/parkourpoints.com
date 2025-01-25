@@ -401,3 +401,7 @@ h2 {
 #all-upcoming-comps:active {
     background-color: #cf5d15;
 }
+
+a{
+    text-decoration:none;
+}

@@ -156,3 +156,7 @@ h1 {
 .view-stats-button:active {
     background-color: #222628
 }
+
+a {
+    text-decoration-color: #393E41;
+}

@@ -111,3 +111,42 @@ td {
     font-size: 1.25rem;
     text-align: center;
 }
+
+a {
+    color: #393E41;
+    font-family: "Radio Canada", serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+#host-gym-link {
+    text-decoration-color: #E7E5DF;
+}
+
+#highlights-button {
+    font-family: "Radio Canada", serif;
+    font-weight: 500;
+    font-size: 2rem;
+    background-color: #E7E5DF;
+    border-radius: 10px;
+    border-style: hidden;
+    border-bottom-style: solid;
+    border-width: 5px;
+    border-color: #bfb9ad;
+    color: #393E41;
+    display: inline-block;
+    margin-bottom: 2px;
+    padding: 0.75rem;
+    transition: 0.01s;
+    margin: 20px 30px 0 30px;
+}
+
+#highlights-button:hover{
+    border-width: 2px;
+    margin-top: 23px;
+}
+
+#highlights-button:active {
+    background-color: #bfb9ad;
+}
