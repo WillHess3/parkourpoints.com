@@ -33,3 +33,13 @@
 .header-button:active {
     opacity: 0.9;
 }
+
+@media (max-width: 1326px){
+    .header-button{
+        font-size: 2rem;
+    }
+    
+    .header-button:hover {
+        font-size: 2.2rem;
+    }
+}
