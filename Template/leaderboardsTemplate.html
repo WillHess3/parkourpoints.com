@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/leaderboardListStylesheet.css" />
+        <link rel="stylesheet" href="../CSS/headerStylesheet.css" />
+    </head>
+    <body>
+        <div class="title">
+            <h1>Leaderboards</h1>
+        </div>
+        <div class="header">
+            <button class="header-button" onclick="goToLink('index.html')">Home</button>
+            <button class="header-button" onclick="goToLink('upcoming.html')">Upcoming</button>
+            <button class="header-button" onclick="goToLink('leaderboards.html')">Leaderboards</button>
+            <button class="header-button" onclick="goToLink('athletes.html')">Athletes</button>
+        </div>
+        <div class="leaderboards">
+            <h2 class="instructions">Select "View Leaderboard" or Search for a Competition</h2>
+            <div class="leaderboard-search">
+                <input class="search-bar" id="search-bar"/>
+                <button class="search-button" onclick="onSearchClicked()">Search</button>
+            </div>
+            <div class="leaderboard-list" id="leaderboard-list">
+                <div class="competition">
+                    <h3 class="competition-name">Lorem ipsum dolor</h3>
+                    <a href="gym.html"><p class="competition-info"><strong>Gym:</strong> sit amet</p></a>
+                    <p class="competition-info"><strong>Date:</strong> 1/25/2025</p>
+                    <p class="competition-info"><strong>Type:</strong> Speed</p>
+                    <button class="view-leaderboard-button" onclick="viewFullLeaderboard()">View Leaderboard</button>
+                </div>
+                <div class="competition">
+                    <h3 class="competition-name">consectetur adipiscing elit</h3>
+                    <a href="gym.html"><p class="competition-info"><strong>Gym:</strong> sed do eiusmod</p></a>
+                    <p class="competition-info"><strong>Date:</strong> 1/25/2025</p>
+                    <p class="competition-info"><strong>Type:</strong> Speed</p>
+                    <button class="view-leaderboard-button" onclick="viewFullLeaderboard()">View Leaderboard</button>
+                </div>
+                <div class="competition">
+                    <h3 class="competition-name">incididunt ut</h3>
+                    <a href="gym.html"><p class="competition-info"><strong>Gym:</strong> labore et dolore magna</p></a>
+                    <p class="competition-info"><strong>Date:</strong> 1/25/2025</p>
+                    <p class="competition-info"><strong>Type:</strong> Speed</p>
+                    <button class="view-leaderboard-button" onclick="viewFullLeaderboard()">View Leaderboard</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

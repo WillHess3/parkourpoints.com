@@ -5,10 +5,12 @@
         <link rel="stylesheet" href="CSS/headerStylesheet.css" />
 
         <script src="Javascript/headerButtons.js"></script>
+        <script src="Javascript/loadGoogleSheetsData.js"></script>
+        <script src="Javascript/upcomingCompetition.js"></script>
     </head>
     <body>
         <div class="title">
-            <h1>Lorem ipsum dolor sit amet</h1>
+            <h1 id="title"></h1>
         </div>
         <div class="header">
             <button class="header-button" onclick="goToLink('index.html')">Home</button>
@@ -17,14 +19,14 @@
             <button class="header-button" onclick="goToLink('athletes.html')">Athletes</button>
         </div>
         <div class="competition-stats">
-            <h2 class="competition-title">Lorem ipsum</h2>
-            <a href="gym.html"><p class="competition-info"><strong>Gym:</strong> tempor</p></a>
-            <p class="competition-info"><strong>Date:</strong> 1/25/2025</p>
-            <p class="competition-info"><strong>Time:</strong> 3:00pm</p>
-            <p class="competition-info"><strong>Type:</strong> Speed</p>
-            <p class="competition-info"><strong>Format:</strong> consectetur adipiscing elit</p>
-            <p class="competition-info"><strong>Age Divisions:</strong> 8-10, 11-13, 14+</p>
-            <p class="competition-info"><strong>Parkour Point Multiplier:</strong> 1</p>
+            <h2 class="competition-title" id="competition-title"></h2>
+            <a href="gym.html" id="gym-link"><p class="competition-info" id="gym"><strong>Gym:</strong></p></a>
+            <p class="competition-info" id="date"><strong>Date:</strong></p>
+            <p class="competition-info" id="time"><strong>Time:</strong></p>
+            <p class="competition-info" id="type"><strong>Type:</strong></p>
+            <p class="competition-info" id="format"><strong>Format:</strong></p>
+            <p class="competition-info" id="age-divisions"><strong>Age Divisions:</strong></p>
+            <p class="competition-info" id="parkour-point-multiplier"><strong>Parkour Point Multiplier:</strong></p>
             <button id="sign-up-button">Sign Up</button>
         </div>
     </body>

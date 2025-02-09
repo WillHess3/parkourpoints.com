@@ -6,6 +6,7 @@
 
         <script src="Javascript/headerButtons.js"></script>
         <script src="Javascript/upcoming.js"></script>
+        <script src="Javascript/loadGoogleSheetsData.js"></script>
     </head>
     <body>
         <div class="title">
@@ -18,28 +19,7 @@
             <button class="header-button" onclick="goToLink('athletes.html')">Athletes</button>
         </div>
         <div class="upcoming-comps">
-            <div class="upcoming-comps-list">
-                <div class="upcoming-comp">
-                    <h3 class="upcoming-comp-name">Lorem ipsum dolor sit amet</h3>
-                    <a href="gym.html"><p class="upcoming-comp-info"><strong>Gym:</strong> incididunt</p></a>
-                    <p class="upcoming-comp-info"><strong>Type:</strong> Speed</p>
-                    <p class="upcoming-comp-info"><strong>Date:</strong> 1/25/2025</p>
-                    <button class="upcoming-comp-more-info" onclick="seeFullComp()">More Info</button>
-                </div>
-                <div class="upcoming-comp">
-                    <h3 class="upcoming-comp-name">consectetur adipiscing elit</h3>
-                    <a href="gym.html"><p class="upcoming-comp-info"><strong>Gym:</strong> ut labore</p></a>
-                    <p class="upcoming-comp-info"><strong>Type:</strong> Skill</p>
-                    <p class="upcoming-comp-info"><strong>Date:</strong> 1/25/2025</p>
-                    <button class="upcoming-comp-more-info" onclick="seeFullComp()">More Info</button>
-                </div>
-                <div class="upcoming-comp">
-                    <h3 class="upcoming-comp-name">sed do eiusmod tempor</h3>
-                    <a href="gym.html"><p class="upcoming-comp-info"><strong>Gym:</strong> et dolore</p></a>
-                    <p class="upcoming-comp-info"><strong>Type:</strong> Style</p>
-                    <p class="upcoming-comp-info"><strong>Date:</strong> 1/25/2025</p>
-                    <button class="upcoming-comp-more-info" onclick="seeFullComp()">More Info</button>
-                </div>
+            <div class="upcoming-comps-list" id="upcoming-comps-list">
             </div>
         </div>
     </body>
