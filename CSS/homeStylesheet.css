@@ -435,3 +435,26 @@ a{
         border-left-style:hidden;
     }
 }
+
+.coming-soon{
+    text-align:center;
+}
+
+ul{
+    display:inline-block;
+    text-align:left;
+    margin-bottom:300px;
+}
+
+li {
+    font-family: "Radio Canada", serif;
+    color: #393E41;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.coming-soon-title {
+    color: #393E41;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
