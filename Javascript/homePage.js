@@ -35,7 +35,7 @@ function seeLeaderboardList() {
 
 //see full leaderboard
 function seeFullLeaderboard(leaderboardID) {
-    sessionStorage.setItem("leaderboardID", parseInt(leaderboardID));
+    sessionStorage.setItem("competitionID", parseInt(leaderboardID));
     location.href = "leaderboard.html";
 }
 
@@ -105,8 +105,8 @@ function createUpcomingComp(upcomingCompData, gymsData) {
     let upcomingCompID = upcomingCompData["upcoming comp id"];
     let name = upcomingCompData["name"];
     let gym;
+    let gymID = upcomingCompData["gym id"];
     if (name != "Coming Soon") {
-        let gymID = upcomingCompData["gym id"];
         gym = gymsData[parseInt(gymID) - 1]["gym name"];
     } else {
         gym = "Coming Soon";
@@ -122,5 +122,9 @@ function createUpcomingComp(upcomingCompData, gymsData) {
         type = "Style";
     }
 
-    document.getElementById("upcoming-comps-list").innerHTML += `<div class="upcoming-comp"><h3 class="upcoming-comp-name">${name}</h3><a href="gym.html"><p class="upcoming-comp-info"><strong>Gym:</strong> ${gym}</p></a><p class="upcoming-comp-info"><strong>Type:</strong> ${type}</p><p class="upcoming-comp-info"><strong>Date:</strong> ${date}</p><button class="upcoming-comp-more-info" onclick="upcomingCompMoreInfo(${upcomingCompID})">More Info</button></div>`;
+    document.getElementById("upcoming-comps-list").innerHTML += `<div class="upcoming-comp"><h3 class="upcoming-comp-name">${name}</h3><a href="gym.html" onclick="goToGym(${gymID})"><p class="upcoming-comp-info"><strong>Gym:</strong> ${gym}</p></a><p class="upcoming-comp-info"><strong>Type:</strong> ${type}</p><p class="upcoming-comp-info"><strong>Date:</strong> ${date}</p><button class="upcoming-comp-more-info" onclick="upcomingCompMoreInfo(${upcomingCompID})">More Info</button></div>`;
+}
+
+function goToGym(gymID) {
+    sessionStorage.setItem("gymID", parseInt(gymID));
 }
