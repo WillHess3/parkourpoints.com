@@ -62,7 +62,6 @@ function createLeaderboard(leaderboard, leaderboardInfoData, athletesData, gymsD
 
 function getAllDataRowsAsStrings(leaderboard, leaderboardInfo, athletesData, gymsData) {
     let athleteIDs = leaderboard["athlete id list"].split(",");
-
     let round1Scores = leaderboard["round 1 score list"].split(",");
     let round2Scores = leaderboard["round 2 score list"].split(",");
     let round3Scores = leaderboard["round 3 score list"].split(",");

@@ -56,7 +56,7 @@ async function buildPage() {
     //set up featured leaderboards
     document.getElementById("featured-leaderboards").innerHTML = "";
     for (let i = leaderboardsData.length - 1; i >= leaderboardsData.length - 3; i--) {
-        if (i > 0) {
+        if (i >= 0) {
             createLeaderboardSnapshots(leaderboardsData[i]);
         } else {
             createLeaderboardSnapshots({ name: "Coming Soon", date: "Coming Soon", type: "Coming Soon" });
