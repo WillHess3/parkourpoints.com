@@ -65,7 +65,7 @@ function createAthleteRow(athleteData) {
     let gym = gymsData[gymID - 1]["gym name"];
     let parkourPoints = athleteData["parkour points"];
 
-    document.getElementById("athlete-list").innerHTML += `<div class="athlete"><h3 class="athlete-name">${name}</h3><a href="gym.html" onclick="viewGymProfile(${gymID})"><p class="athlete-info"><strong>Gym:</strong> ${gym}</p></a><p class="athlete-info"><strong>Parkour Points:</strong> ${parkourPoints}</p><button class="view-stats-button" onclick="viewAthleteProfile(${athleteID})">View Stats</button></div>`;
+    document.getElementById("athlete-list").innerHTML += `<div class="athlete"><h3 class="athlete-name">${name}</h3><a href="gym.html" onclick="viewGymProfile(${gymID})" class="athlete-info"><strong>Gym:</strong> ${gym}</a><p class="athlete-info"><strong>Parkour Points:</strong> ${parkourPoints}</p><button class="view-stats-button" onclick="viewAthleteProfile(${athleteID})">View Stats</button></div>`;
 }
 
 function isLooseSubstring(a, b) {

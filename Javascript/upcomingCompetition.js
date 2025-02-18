@@ -36,7 +36,7 @@ async function buildPage() {
     document.getElementById("gym-link").onclick = viewGymProfile(gymID);
     document.getElementById("gym").innerHTML = `<strong>Gym: </strong>${gymName}`;
     document.getElementById("date").innerHTML = `<strong>Date: </strong>${date}`;
-    document.getElementById("date").innerHTML = `<strong>Time: </strong>${time}`;
+    document.getElementById("time").innerHTML = `<strong>Time: </strong>${time}`;
     document.getElementById("type").innerHTML = `<strong>Type: </strong>${type}`;
     document.getElementById("format").innerHTML = `<strong>Format: </strong>${format}`;
     document.getElementById("age-divisions").innerHTML = `<strong>Age Divisions: </strong>${ageDivisions}`;
