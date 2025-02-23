@@ -101,7 +101,7 @@ th {
     color: #E7E5DF;
 }
 
-.competition-data-row {
+.competition-data-row:nth-child(2n) {
     background-color: #E7E5DF;
 }
 

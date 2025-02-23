@@ -103,7 +103,7 @@ function createCompHistoryRow(leaderboardAgeDivisionData, leaderboardInfoData, g
         parkourPointsEarned = 2;
     }
     parkourPointsEarned *= parseInt(leaderboardInfoData["parkour point multiplier"]);
-    document.getElementById("comp-history-table").innerHTML += `<tr class="competition-data-row"><td><a href="leaderboard.html" onclick="seeFullLeaderboard(${leaderboardID})">${compName}</a></td><td>${type}</td><td>${date}</td><td><a href="gym.html" onclick="goToGym(${gymID})">${gym}</a></td><td>${place}</td><td>${percentile}</td><td>${ageDivision}</td><td>${round1Score}</td><td>${round2Score}</td><td>${round3Score}</td><td>${finalScore}</td><td>${parkourPointsEarned}</td></tr>`;
+    document.getElementById("comp-history-table-tbody").innerHTML += `<tr class="competition-data-row"><td><a href="leaderboard.html" onclick="seeFullLeaderboard(${leaderboardID})">${compName}</a></td><td>${type}</td><td>${date}</td><td><a href="gym.html" onclick="goToGym(${gymID})">${gym}</a></td><td>${place}</td><td>${percentile}</td><td>${ageDivision}</td><td>${round1Score}</td><td>${round2Score}</td><td>${round3Score}</td><td>${finalScore}</td><td>${parkourPointsEarned}</td></tr>`;
 }
 
 function goToGym(gymID) {
