@@ -29,6 +29,10 @@ async function buildPage() {
 }
 
 function createUpcomingCompRow(upcomingCompData) {
+    if (upcomingCompData["upcoming comp id"] == "") {
+        return;
+    }
+
     let upcomingCompID = parseInt(upcomingCompData["upcoming comp id"])
     let gymID = parseInt(upcomingCompData["gym id"]);
     let name = upcomingCompData["name"];
