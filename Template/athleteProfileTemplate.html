@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../CSS/headerStylesheet.css" />
-        <link rel="stylesheet" href="../CSS/athleteProfileStylesheet.css" />
-    </head>
+<head>
+    <link rel="stylesheet" href="../CSS/headerStylesheet.css" />
+    <link rel="stylesheet" href="../CSS/profileStructureStylesheet.css" />
+    <link rel="stylesheet" href="../CSS/athleteProfileStylesheet.css" />
+</head>
     <body>
-        <div class="title">
+        <div class="title-box">
             <h1 id="title">Lorem ipsum</h1>
         </div>
         <div class="header">
@@ -14,14 +15,15 @@
             <button class="header-button" onclick="goToLink('leaderboards.html')">Leaderboards</button>
             <button class="header-button" onclick="goToLink('athletes.html')">Athletes</button>
         </div>
-        <div class="athlete-stats">
-            <h3 id="athlete-name">Lorem ipsum</h3>
-            <a id="gym-link" href="gym.html"><p class="athlete-info" id="gym"><strong>Gym:</strong> tempor</p></a>
-            <p class="athlete-info" id="parkour-points"><strong>Parkour Points:</strong> 10</p>
-            <p class="athlete-info" id="competitions-attended"><strong>Competitions Attended:</strong> 3</p>
+        <div class="profile-section">
+            <h3>Athlete Stats</h3>
+            <p class="info"><strong>Name:</strong> Lorem Ipsum</p>
+            <a id="gym-link" href="gym.html"><p class="info" id="gym"><strong>Gym:</strong> tempor</p></a>
+            <p class="info" id="parkour-points"><strong>Parkour Points:</strong> 10</p>
+            <p class="info" id="competitions-attended"><strong>Competitions Attended:</strong> 3</p>
         </div>
-        <div class="competition-history">
-            <h3 id="competition-history-title">Competition History</h3>
+        <div class="profile-section">
+            <h3>Competition History</h3>
             <p class="instructions">Click on a competition name to view the full leaderboard</p>
             <div class="scrollable-table">
                 <table id="comp-history-table">

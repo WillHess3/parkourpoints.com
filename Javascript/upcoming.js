@@ -48,5 +48,5 @@ function createUpcomingCompRow(upcomingCompData) {
     }
     let date = upcomingCompData["date"];
 
-    document.getElementById("upcoming-comps-list").innerHTML += `<div class="upcoming-comp"><h3 class="upcoming-comp-name">${name}</h3><a href="gym.html" onclick="viewGymProfile(${gymID})"><p class="upcoming-comp-info"><strong>Gym:</strong> ${gym}</p></a><p class="upcoming-comp-info"><strong>Type:</strong> ${type}</p><p class="upcoming-comp-info"><strong>Date:</strong> ${date}</p><button class="upcoming-comp-more-info" onclick="seeFullComp(${upcomingCompID})">More Info</button></div>`;
+    document.getElementById("upcoming-comps-list").innerHTML += `<div class="list-entry"><h3 class="entry-name">${name}</h3><a href="gym.html" onclick="viewGymProfile(${gymID})"><p class="entry-info"><strong>Gym:</strong> ${gym}</p></a><p class="entry-info"><strong>Type:</strong> ${type}</p><p class="entry-info"><strong>Date:</strong> ${date}</p><button class="entry-button" onclick="seeFullComp(${upcomingCompID})">More Info</button></div>`;
 }

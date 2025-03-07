@@ -3,14 +3,16 @@
     <head>
         <link rel="stylesheet" href="CSS/gymStylesheet.css" />
         <link rel="stylesheet" href="CSS/headerStylesheet.css" />
+        <link rel="stylesheet" href="CSS/profileStructureStylesheet.css" />
+        <link rel="stylesheet" href="CSS/listStylesheet.css" />
 
         <script src="Javascript/headerButtons.js"></script>
         <script src="Javascript/loadGoogleSheetsData.js"></script>
         <script src="Javascript/gym.js"></script>
     </head>
     <body>
-        <div class="title">
-            <h1 id="title"></h1>
+        <div class="title-box">
+            <h1 id="title">Loading...</h1>
         </div>
         <div class="header">
             <button class="header-button" onclick="goToLink('index.html')">Home</button>
@@ -18,28 +20,28 @@
             <button class="header-button" onclick="goToLink('leaderboards.html')">Leaderboards</button>
             <button class="header-button" onclick="goToLink('athletes.html')">Athletes</button>
         </div>
-        <div class="gym-details">
+        <div class="profile-section gym-details">
             <img id="gym-picture" alt="gym picture or logo" src="" />
             <div class="gym-info-section">
-                <h2 id="gym-title"></h2>
-                <p class="gym-info" id="location"><strong>Location:</strong></p>
-                <p class="gym-info" id="competitions-hosted"><strong>Competitions Hosted:</strong></p>
-                <p class="gym-info" id="affiliated-athletes"><strong>Affiliated Athletes:</strong></p>
-                <button id="website-button" onclick="goToGymWebsite()">Website</button>
+                <h3 id="gym-title"></h3>
+                <p class="info" id="location"><strong>Location:</strong></p>
+                <p class="info" id="competitions-hosted"><strong>Competitions Hosted:</strong></p>
+                <p class="info" id="affiliated-athletes"><strong>Affiliated Athletes:</strong></p>
+                <a id="website-link" href="#"><p class="info" id="website"><strong>Website:</strong></p></a>
             </div>
         </div>
-        <div class="leaderboards">
-            <h2 id="leaderboards-title">Leaderboards</h2>
+        <div class="profile-section leaderboards">
+            <h3>Leaderboards</h3>
             <div class="leaderboard-list" id="leaderboard-list">
             </div>
         </div>
-        <div class="affiliated-athletes-section">
-            <h2 id="affiliated-athletes-title">Affiliated Athletes</h2>
+        <div class="profile-section affiliated-athletes-section">
+            <h3>Affiliated Athletes</h3>
             <div class="affiliated-athletes-list" id="affiliated-athletes-list">
             </div>
         </div>
-        <div class="upcoming-comps">
-            <h2 id="upcoming-comps-title">Upcoming Competitions</h2>
+        <div class="profile-section upcoming-comps">
+            <h3 class="upcoming-comps-title">Upcoming Competitions</h3>
             <div class="upcoming-comps-list" id="upcoming-comps-list">
             </div>
         </div>

@@ -1,84 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
-
-body {
-    background-color: #E7E5DF;
-    margin: 0;
-}
-
 h1 {
-    font-family: "Black Ops One", serif;
-    font-weight: 400;
-    font-size: 6rem;
-    align-self: center;
-    margin: auto;
     color: #E7E5DF;
 }
 
-.title {
-    height: 12rem;
+.title-box {
     background-color: #4A8FE7;
-    display: flex;
 }
 
-.leaderboards {
+.main-content {
     background-color: #4A8FE7;
-    margin: 100px 10vw 100px 10vw;
-    padding: 2.5%;
-    border-radius: 50px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
 }
 
 .instructions {
-    font-family: "Radio Canada", serif;
-    font-weight: 600;
-    font-size: 2rem;
     color: #E7E5DF;
-    margin-bottom: 30px;
-}
-
-.leaderboard-search{
-    display: flex;
-    justify-content: center;
 }
 
 .search-bar {
-    width: 60rem;
-    height: 4rem;
-    font-family: "Radio Canada", serif;
-    font-weight: 600;
     color: #393E41;
     background-color: #E7E5DF;
-    font-size: 3rem;
     border-color: #393E41;
-    border-style: solid;
-    border-radius: 10px;
-    border-width: 3px;
-    margin-right: 10px;
 }
 
 .search-button {
-    font-family: "Radio Canada", serif;
-    font-weight: 500;
-    font-size: 2rem;
     background-color: #FE7F2D;
-    border-radius: 10px;
-    border-style: hidden;
-    border-bottom-style: solid;
-    border-width: 5px;
     border-color: #cf5d15;
     color: #E7E5DF;
-    display: inline-block;
-    align-self: flex-end;
-    margin-bottom: 2px;
-    padding: 0.75rem;
-    transition: 0.1s;
-}
-
-.search-button:hover{
-    border-width: 2px;
 }
 
 .search-button:active {
@@ -89,71 +34,29 @@ h1 {
     margin-top: 30px;
 }
 
-.competition {
-    display: flex;
-    margin-bottom: 0;
-}
-
-.competition:first-child{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.competition:last-child {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.competition:nth-child(2n+1) {
+.list-entry:nth-child(2n+1) {
     background-color: #FE7F2D;
 }
 
-.competition:nth-child(2n) {
+.list-entry:nth-child(2n) {
     background-color: #cf5d15;
 }
 
-.competition-name {
-    font-family: "Black Ops One", serif;
-    font-weight: 400;
-    font-size: 1.5rem;
+.entry-name {
     color: #E7E5DF;
-    margin: 10px;
-    flex-grow: 1;
-    text-align: left;
 }
 
-.competition-info {
-    font-family: "Radio Canada", serif;
-    font-weight: 400;
-    font-size: 1.25rem;
+.entry-info {
     color: #E7E5DF;
-    margin: 10px 30px 10px 30px;
-    align-self:center;
 }
 
-.view-leaderboard-button {
-    font-family: "Radio Canada", serif;
-    font-weight: 500;
-    font-size: 1.25rem;
+.entry-button {
     background-color: #4A8FE7;
-    border-radius: 10px;
-    border-style: hidden;
-    border-bottom-style: solid;
-    border-width: 5px;
     border-color: #305fb8;
     color: #E7E5DF;
-    display: inline-block;
-    padding: .25rem;
-    transition: 0.1s;
-    margin: 0px 30px 5px 30px;
-    align-self: flex-end;
 }
 
-.view-leaderboard-button:hover {
-    border-width: 2px;
-}
-
-.view-leaderboard-button:active {
+.entry-button:active {
     background-color: #305fb8;
 }
 

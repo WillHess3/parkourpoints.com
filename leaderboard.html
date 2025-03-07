@@ -3,14 +3,15 @@
     <head>
         <link rel="stylesheet" href="CSS/leaderboardStylesheet.css" />
         <link rel="stylesheet" href="CSS/headerStylesheet.css" />
+        <link rel="stylesheet" href="CSS/profileStructureStylesheet.css" />
 
         <script src="Javascript/headerButtons.js"></script>
         <script src="Javascript/loadGoogleSheetsData.js"></script>
         <script src="Javascript/leaderboard.js"></script>
     </head>
     <body>
-        <div class="title">
-            <h1 id="title"></h1>
+        <div class="title-box">
+            <h1 id="title">Loading...</h1>
         </div>
         <div class="header">
             <button class="header-button" onclick="goToLink('index.html')">Home</button>
@@ -18,19 +19,19 @@
             <button class="header-button" onclick="goToLink('leaderboards.html')">Leaderboards</button>
             <button class="header-button" onclick="goToLink('athletes.html')">Athletes</button>
         </div>
-        <div class="leaderboard-stats">
-            <h2 class="leaderboard-title" id="leaderboard-title"></h2>
-            <a href="gym.html" id="host-gym-link"><p class="competition-info" id="gym"><strong>Gym:</strong></p></a>
-            <p class="competition-info" id="date"><strong>Date:</strong></p>
-            <p class="competition-info" id="type"><strong>Type:</strong></p>
-            <p class="competition-info" id="format"><strong>Format:</strong></p>
-            <p class="competition-info" id="number-of-competitors"><strong>Competitors:</strong></p>
-            <p class="competition-info" id="age-divisions"><strong>Age Divisions:</strong></p>
-            <p class="competition-info" id="parkour-point-multiplier"><strong>Parkour Point Multiplier:</strong></p>
-            <button id="highlights-button">View Highlights</button>
+        <div class="profile-section">
+            <h3 class="leaderboard-title" id="leaderboard-title"></h3>
+            <a href="gym.html" class="info-link" id="host-gym-link"><p class="info" id="gym"><strong>Gym:</strong></p></a>
+            <p class="info" id="date"><strong>Date:</strong></p>
+            <p class="info" id="type"><strong>Type:</strong></p>
+            <p class="info" id="format"><strong>Format:</strong></p>
+            <p class="info" id="number-of-competitors"><strong>Competitors:</strong></p>
+            <p class="info" id="age-divisions"><strong>Age Divisions:</strong></p>
+            <p class="info" id="parkour-point-multiplier"><strong>Parkour Point Multiplier:</strong></p>
+            <a href="#" class="info-link" id="highlights-link"><p class="info"><strong>View Highlights</strong></p></a>
         </div>
-        <div class="leaderboard" id="leaderboard">
-            <h2 class="leaderboard-title">Leaderboard</h2>
+        <div class="profile-section" id="leaderboard">
+            <h3>Leaderboard</h3>
         </div>
     </body>
 </html>

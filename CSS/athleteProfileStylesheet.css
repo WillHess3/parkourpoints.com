@@ -1,103 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
-
-body {
-    background-color: #E7E5DF;
-    margin: 0;
-}
-
 h1 {
-    font-family: "Black Ops One", serif;
-    font-weight: 400;
-    font-size: 6rem;
-    align-self: center;
-    margin: auto;
     color: #E7E5DF;
 }
 
-.title {
-    height: 12rem;
+.title-box {
     background-color: #393E41;
-    display: flex;
 }
 
-.athlete-stats {
+.profile-section {
     background-color: #393E41;
-    margin: 100px 10vw 100px 10vw;
-    padding: 2.5%;
-    border-radius: 50px;
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-#athlete-name {
-    font-family: "Black Ops One", serif;
-    font-weight: 400;
-    font-size: 4rem;
+h3 {
     color: #E7E5DF;
-    margin: 10px;
-    flex-grow: 1;
-    align-self: center;
 }
 
-.athlete-info {
-    font-family: "Radio Canada", serif;
-    font-weight: 400;
-    font-size: 2rem;
+.info {
+    align-self: flex-start;
     color: #E7E5DF;
-    margin: 20px 30px 0 30px;
 }
 
 #gym-link {
     text-decoration-color: #E7E5DF;
 }
 
-.competition-history {
-    background-color: #393E41;
-    margin: 100px 10vw 100px 10vw;
-    padding: 2.5%;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#competition-history-title {
-    font-family: "Black Ops One", serif;
-    font-weight: 400;
-    font-size: 4rem;
-    color: #E7E5DF;
-    margin: 10px;
-}
-
 .instructions {
-    font-family: "Radio Canada", serif;
-    font-weight: 600;
-    font-size: 2rem;
     color: #E7E5DF;
-    margin-bottom: 30px;
-}
-
-.scrollable-table {
-    margin-top: 25px;
-    white-space: nowrap;
-    overflow-x: scroll;
-    width: 100%;
-}
-
-table{
-    border-collapse:collapse;
 }
 
 th {
     border-color: #E7E5DF;
-    border-style: solid;
-    border-width: 2px;
-    padding: 10px;
-    font-family: "Radio Canada", serif;
-    font-weight: 600;
-    font-size: 1.5rem;
     color: #E7E5DF;
 }
 
@@ -112,19 +45,8 @@ th {
 td{
     color: #393E41;
     border-color: #393E41;
-    border-width: 0 2px 0 2px;
-    border-style: solid;
-    padding: 10px;
-    font-family: "Radio Canada", serif;
-    font-weight: 600;
-    font-size: 1.25rem;
-    text-align: center;
 }
 
 a {
     color: #393E41;
-    font-family: "Radio Canada", serif;
-    font-weight: 600;
-    font-size: 1.25rem;
-    text-align: center;
 }

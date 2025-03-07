@@ -2,10 +2,12 @@
 <html>
     <head>
         <link rel="stylesheet" href="../CSS/gymStylesheet.css" />
+        <link rel="stylesheet" href="../CSS/profileStructureStylesheet.css" />
         <link rel="stylesheet" href="../CSS/headerStylesheet.css" />
+        <link rel="stylesheet" href="../CSS/listStylesheet.css" />
     </head>
     <body>
-        <div class="title">
+        <div class="title-box">
             <h1 id="title">Lorem ipsum</h1>
         </div>
         <div class="header">
@@ -14,94 +16,84 @@
             <button class="header-button" onclick="goToLink('leaderboards.html')">Leaderboards</button>
             <button class="header-button" onclick="goToLink('athletes.html')">Athletes</button>
         </div>
-        <div class="gym-details">
+        <div class="profile-section gym-details">
             <img id="gym-picture" src="images/athleteOfTheMonth.png" />
             <div class="gym-info-section">
-                <h2 id="gym-title">Lorem ipsum</h2>
-                <p class="gym-info" id="location"><strong>Location:</strong> Lorem ipsum dolor sit amet</p>
-                <p class="gym-info" id="competitions-hosted"><strong>Competitions Hosted:</strong> 4</p>
-                <p class="gym-info" id="affiliated-athletes"><strong>Affiliated Athletes:</strong> 20</p>
-                <button id="website-button" onclick="goToGymWebsite()">Website</button>
+                <h3 id="gym-title">Lorem ipsum</h3>
+                <p class="info" id="location"><strong>Location:</strong> Lorem ipsum dolor sit amet</p>
+                <p class="info" id="competitions-hosted"><strong>Competitions Hosted:</strong> 4</p>
+                <p class="info" id="affiliated-athletes"><strong>Affiliated Athletes:</strong> 20</p>
+                <p class="info" id="website-link" onclick="goToGymWebsite()"><strong>Website:</strong> loremipsum.com</p>
             </div>
         </div>
-        <div class="leaderboards">
-            <h2 id="leaderboards-title">Leaderboards</h2>
+        <div class="profile-section leaderboards">
+            <h3>Leaderboards</h3>
             <div class="leaderboard-list" id="leaderboard-list">
-                <div class="competition">
-                    <h3 class="competition-name">Lorem ipsum dolor</h3>
-                    <p class="competition-info"><strong>Gym:</strong> sit amet</p>
-                    <p class="competition-info"><strong>Date:</strong> 1/25/2025</p>
-                    <p class="competition-info"><strong>Type:</strong> Speed</p>
-                    <button class="view-leaderboard-button" onclick="viewFullLeaderboard()">View Leaderboard</button>
+                <div class="list-entry competition">
+                    <h3 class="entry-name competition-name">Lorem ipsum dolor</h3>
+                    <p class="entry-info competition-info"><strong>Date:</strong> 1/25/2025</p>
+                    <p class="entry-info competition-info"><strong>Type:</strong> Speed</p>
+                    <button class="entry-button view-leaderboard-button" onclick="viewFullLeaderboard()">View Leaderboard</button>
                 </div>
-                <div class="competition">
-                    <h3 class="competition-name">consectetur adipiscing elit</h3>
-                    <p class="competition-info"><strong>Gym:</strong> sed do eiusmod</p>
-                    <p class="competition-info"><strong>Date:</strong> 1/25/2025</p>
-                    <p class="competition-info"><strong>Type:</strong> Speed</p>
-                    <button class="view-leaderboard-button" onclick="viewFullLeaderboard()">View Leaderboard</button>
+                <div class="list-entry competition">
+                    <h3 class="entry-name competition-name">consectetur adipiscing elit</h3>
+                    <p class="entry-info competition-info"><strong>Date:</strong> 1/25/2025</p>
+                    <p class="entry-info competition-info"><strong>Type:</strong> Speed</p>
+                    <button class="entry-button view-leaderboard-button" onclick="viewFullLeaderboard()">View Leaderboard</button>
                 </div>
-                <div class="competition">
-                    <h3 class="competition-name">incididunt ut</h3>
-                    <p class="competition-info"><strong>Gym:</strong> labore et dolore magna</p>
-                    <p class="competition-info"><strong>Date:</strong> 1/25/2025</p>
-                    <p class="competition-info"><strong>Type:</strong> Speed</p>
-                    <button class="view-leaderboard-button" onclick="viewFullLeaderboard()">View Leaderboard</button>
+                <div class="list-entry competition">
+                    <h3 class="entry-name competition-name">incididunt ut</h3>
+                    <p class="entry-info competition-info"><strong>Date:</strong> 1/25/2025</p>
+                    <p class="entry-info competition-info"><strong>Type:</strong> Speed</p>
+                    <button class="entry-button view-leaderboard-button" onclick="viewFullLeaderboard()">View Leaderboard</button>
                 </div>
             </div>
         </div>
-        <div class="affiliated-athletes-section">
-            <h2 id="affiliated-athletes-title">Affiliated Athletes</h2>
+        <div class="profile-section affiliated-athletes-section">
+            <h3>Affiliated Athletes</h3>
             <div class="affiliated-athletes-list" id="affiliated-athletes-list">
-                <div class="athlete">
-                    <h3 class="athlete-name">Lorem ipsum</h3>
-                    <p class="athlete-info"><strong>Gym:</strong> tempor</p>
-                    <p class="athlete-info"><strong>Parkour Points:</strong> 10</p>
-                    <button class="view-stats-button" onclick="viewAthleteProfile()">View Stats</button>
+                <div class="list-entry athlete">
+                    <h3 class="entry-name athlete-name">Lorem ipsum</h3>
+                    <p class="entry-info athlete-info"><strong>Parkour Points:</strong> 10</p>
+                    <button class="entry-button view-stats-button" onclick="viewAthleteProfile()">View Stats</button>
                 </div>
-                <div class="athlete">
-                    <h3 class="athlete-name">dolor sit</h3>
-                    <p class="athlete-info"><strong>Gym:</strong> incididunt ut labore</p>
-                    <p class="athlete-info"><strong>Parkour Points:</strong> 100</p>
-                    <button class="view-stats-button" onclick="viewAthleteProfile()">View Stats</button>
+                <div class="list-entry athlete">
+                    <h3 class="entry-name athlete-name">dolor sit</h3>
+                    <p class="entry-info athlete-info"><strong>Parkour Points:</strong> 100</p>
+                    <button class="entry-button view-stats-button" onclick="viewAthleteProfile()">View Stats</button>
                 </div>
-                <div class="athlete">
-                    <h3 class="athlete-name">consectetur adipiscing</h3>
-                    <p class="athlete-info"><strong>Gym:</strong> et</p>
-                    <p class="athlete-info"><strong>Parkour Points:</strong> 0</p>
-                    <button class="view-stats-button" onclick="viewAthleteProfile()">View Stats</button>
+                <div class="list-entry athlete">
+                    <h3 class="entry-name athlete-name">consectetur adipiscing</h3>
+                    <p class="entry-info athlete-info"><strong>Parkour Points:</strong> 0</p>
+                    <button class="entry-button view-stats-button" onclick="viewAthleteProfile()">View Stats</button>
                 </div>
-                <div class="athlete">
-                    <h3 class="athlete-name">sed do eiusmod</h3>
-                    <p class="athlete-info"><strong>Gym:</strong> dolore magna</p>
-                    <p class="athlete-info"><strong>Parkour Points:</strong> 69</p>
-                    <button class="view-stats-button" onclick="viewAthleteProfile()">View Stats</button>
+                <div class="list-entry athlete">
+                    <h3 class="entry-name athlete-name">sed do eiusmod</h3>
+                    <p class="entry-info athlete-info"><strong>Parkour Points:</strong> 69</p>
+                    <button class="entry-button view-stats-button" onclick="viewAthleteProfile()">View Stats</button>
                 </div>
             </div>
         </div>
-        <div class="upcoming-comps">
-            <h2 id="upcoming-comps-title">Upcoming Competitions</h2>
+        <div class="profile-section upcoming-comps">
+            <h3 class="upcoming-comps-title">Upcoming Competitions</h3>
             <div class="upcoming-comps-list" id="upcoming-comps-list">
-                <div class="upcoming-comp">
-                    <h3 class="upcoming-comp-name">Lorem ipsum dolor sit amet</h3>
-                    <p class="upcoming-comp-info"><strong>Gym:</strong> incididunt</p>
-                    <p class="upcoming-comp-info"><strong>Type:</strong> Speed</p>
-                    <p class="upcoming-comp-info"><strong>Date:</strong> 1/25/2025</p>
-                    <button class="upcoming-comp-more-info" onclick="viewFullUpcomingComp()">More Info</button>
+                <div class="list-entry upcoming-comp">
+                    <h3 class="entry-name upcoming-comp-name">Lorem ipsum dolor sit amet</h3>
+                    <p class="entry-info upcoming-comp-info"><strong>Type:</strong> Speed</p>
+                    <p class="entry-info upcoming-comp-info"><strong>Date:</strong> 1/25/2025</p>
+                    <button class="entry-button upcoming-comp-more-info" onclick="viewFullUpcomingComp()">More Info</button>
                 </div>
-                <div class="upcoming-comp">
-                    <h3 class="upcoming-comp-name">consectetur adipiscing elit</h3>
-                    <p class="upcoming-comp-info"><strong>Gym:</strong> ut labore</p>
-                    <p class="upcoming-comp-info"><strong>Type:</strong> Skill</p>
-                    <p class="upcoming-comp-info"><strong>Date:</strong> 1/25/2025</p>
-                    <button class="upcoming-comp-more-info" onclick="viewFullUpcomingComp()">More Info</button>
+                <div class="list-entry upcoming-comp">
+                    <h3 class="entry-name upcoming-comp-name">consectetur adipiscing elit</h3>
+                    <p class="entry-info upcoming-comp-info"><strong>Type:</strong> Skill</p>
+                    <p class="entry-info upcoming-comp-info"><strong>Date:</strong> 1/25/2025</p>
+                    <button class="entry-button upcoming-comp-more-info" onclick="viewFullUpcomingComp()">More Info</button>
                 </div>
-                <div class="upcoming-comp">
-                    <h3 class="upcoming-comp-name">sed do eiusmod tempor</h3>
-                    <p class="upcoming-comp-info"><strong>Gym:</strong> et dolore</p>
-                    <p class="upcoming-comp-info"><strong>Type:</strong> Style</p>
-                    <p class="upcoming-comp-info"><strong>Date:</strong> 1/25/2025</p>
-                    <button class="upcoming-comp-more-info" onclick="viewFullUpcomingComp()">More Info</button>
+                <div class="list-entry upcoming-comp">
+                    <h3 class="entry-name upcoming-comp-name">sed do eiusmod tempor</h3>
+                    <p class="entry-info upcoming-comp-info"><strong>Type:</strong> Style</p>
+                    <p class="entry-info upcoming-comp-info"><strong>Date:</strong> 1/25/2025</p>
+                    <button class="entry-button upcoming-comp-more-info" onclick="viewFullUpcomingComp()">More Info</button>
                 </div>
             </div>
         </div>

@@ -37,7 +37,7 @@ function createLeaderboardRow(leaderboardInfo) {
         type = "Style";
     }
 
-    document.getElementById("leaderboard-list").innerHTML += `<div class="competition"><h3 class="competition-name">${name}</h3><a href="gym.html" onclick="viewGymProfile(${gymID})"><p class="competition-info"><strong>Gym:</strong> ${gym}</p></a><p class="competition-info"><strong>Date:</strong> ${date}</p><p class="competition-info"><strong>Type:</strong> ${type}</p><button class="view-leaderboard-button" onclick="viewFullLeaderboard(${leaderboardID})">View Leaderboard</button></div>`;
+    document.getElementById("leaderboard-list").innerHTML += `<div class="list-entry"><h3 class="entry-name">${name}</h3><a href="gym.html" onclick="viewGymProfile(${gymID})"><p class="entry-info"><strong>Gym:</strong> ${gym}</p></a><p class="entry-info"><strong>Date:</strong> ${date}</p><p class="entry-info"><strong>Type:</strong> ${type}</p><button class="entry-button" onclick="viewFullLeaderboard(${leaderboardID})">View Leaderboard</button></div>`;
 }
 
 //search

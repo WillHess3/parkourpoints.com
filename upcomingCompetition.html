@@ -3,14 +3,15 @@
     <head>
         <link rel="stylesheet" href="CSS/upcomingCompetitionStylesheet.css" />
         <link rel="stylesheet" href="CSS/headerStylesheet.css" />
+        <link rel="stylesheet" href="CSS/profileStructureStylesheet.css" />
 
         <script src="Javascript/headerButtons.js"></script>
         <script src="Javascript/loadGoogleSheetsData.js"></script>
         <script src="Javascript/upcomingCompetition.js"></script>
     </head>
     <body>
-        <div class="title">
-            <h1 id="title"></h1>
+        <div class="title-box">
+            <h1 id="title">Loading...</h1>
         </div>
         <div class="header">
             <button class="header-button" onclick="goToLink('index.html')">Home</button>
@@ -18,15 +19,15 @@
             <button class="header-button" onclick="goToLink('leaderboards.html')">Leaderboards</button>
             <button class="header-button" onclick="goToLink('athletes.html')">Athletes</button>
         </div>
-        <div class="competition-stats">
-            <h2 class="competition-title" id="competition-title"></h2>
-            <a href="gym.html" id="gym-link"><p class="competition-info" id="gym"><strong>Gym:</strong></p></a>
-            <p class="competition-info" id="date"><strong>Date:</strong></p>
-            <p class="competition-info" id="time"><strong>Time:</strong></p>
-            <p class="competition-info" id="type"><strong>Type:</strong></p>
-            <p class="competition-info" id="format"><strong>Format:</strong></p>
-            <p class="competition-info" id="age-divisions"><strong>Age Divisions:</strong></p>
-            <p class="competition-info" id="parkour-point-multiplier"><strong>Parkour Point Multiplier:</strong></p>
+        <div class="profile-section">
+            <h3 id="competition-title"></h3>
+            <a href="gym.html" id="gym-link"><p class="info" id="gym"><strong>Gym:</strong></p></a>
+            <p class="info" id="date"><strong>Date:</strong></p>
+            <p class="info" id="time"><strong>Time:</strong></p>
+            <p class="info" id="type"><strong>Type:</strong></p>
+            <p class="info" id="format"><strong>Format:</strong></p>
+            <p class="info" id="age-divisions"><strong>Age Divisions:</strong></p>
+            <p class="info" id="parkour-point-multiplier"><strong>Parkour Point Multiplier:</strong></p>
             <button id="sign-up-button">Sign Up</button>
         </div>
     </body>

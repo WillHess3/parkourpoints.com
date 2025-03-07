@@ -49,7 +49,7 @@ async function buildPage() {
     document.getElementById("age-divisions").innerHTML = "<strong>Age Divisions: </strong>" + leaderboardInfoData["age divisions"];
     document.getElementById("parkour-point-multiplier").innerHTML = "<strong>Parkour Point Multiplier: </strong>" + leaderboardInfoData["parkour point multiplier"];
 
-    document.getElementById("highlights-button").onclick = () => location.href = leaderboardInfoData["highlights link"];
+    document.getElementById("highlights-link").href = leaderboardInfoData["highlights link"];
 }
 
 function createLeaderboard(leaderboard, leaderboardInfoData, athletesData, gymsData) {

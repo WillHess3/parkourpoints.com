@@ -1,97 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
-
-body {
-    background-color: #E7E5DF;
-    margin: 0;
-}
-
 h1 {
-    font-family: "Black Ops One", serif;
-    font-weight: 400;
-    font-size: 6rem;
-    align-self: center;
-    margin: auto;
     color: #E7E5DF;
 }
 
-.title {
-    height: 12rem;
+.title-box {
     background-color: #4A8FE7;
-    display: flex;
 }
 
-.leaderboard-stats {
+.profile-section {
     background-color: #4A8FE7;
-    margin: 100px 10vw 100px 10vw;
-    padding: 2.5%;
-    border-radius: 50px;
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.leaderboard-title {
-    font-family: "Black Ops One", serif;
-    font-weight: 400;
-    font-size: 4rem;
+h3 {
     color: #E7E5DF;
-    margin: 10px;
-    flex-grow: 1;
-    align-self: center;
 }
 
-.competition-info {
-    font-family: "Radio Canada", serif;
-    font-weight: 400;
-    font-size: 2rem;
+.info{
     color: #E7E5DF;
-    margin: 20px 30px 0 30px;
 }
 
-.leaderboard {
-    background-color: #4A8FE7;
-    margin: 100px 10vw 100px 10vw;
-    padding: 2.5%;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.leaderboard-age-division {
-    font-family: "Black Ops One", serif;
-    font-weight: 400;
-    font-size: 3rem;
+.info-link{
     color: #E7E5DF;
-    margin: 30px;
-    flex-grow: 1;
-    align-self: center;
+    text-align: left;
 }
 
-.scrollable-table {
-    margin-top: 0px;
-    white-space: nowrap;
-    overflow-x: auto;
-    width: 100%;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-table {
-    border-collapse: collapse;
-    display: table;
-    margin: 0 auto;
+.leaderboard-age-division{
+    margin-top:50px;
 }
 
 th {
     border-color: #E7E5DF;
-    border-style: solid;
-    border-width: 2px;
-    padding: 10px;
-    font-family: "Radio Canada", serif;
-    font-weight: 600;
-    font-size: 1.5rem;
     color: #E7E5DF;
 }
 
@@ -106,13 +45,6 @@ th {
 td {
     color: #393E41;
     border-color: #4A8FE7;
-    border-width: 0 2px 0 2px;
-    border-style: solid;
-    padding: 10px;
-    font-family: "Radio Canada", serif;
-    font-weight: 600;
-    font-size: 1.25rem;
-    text-align: center;
 }
 
 a {
@@ -121,35 +53,4 @@ a {
     font-weight: 600;
     font-size: 1.25rem;
     text-align: center;
-}
-
-#host-gym-link {
-    text-decoration-color: #E7E5DF;
-}
-
-#highlights-button {
-    font-family: "Radio Canada", serif;
-    font-weight: 500;
-    font-size: 2rem;
-    background-color: #E7E5DF;
-    border-radius: 10px;
-    border-style: hidden;
-    border-bottom-style: solid;
-    border-width: 5px;
-    border-color: #bfb9ad;
-    color: #393E41;
-    display: inline-block;
-    margin-bottom: 2px;
-    padding: 0.75rem;
-    transition: 0.01s;
-    margin: 20px 30px 0 30px;
-}
-
-#highlights-button:hover{
-    border-width: 2px;
-    margin-top: 23px;
-}
-
-#highlights-button:active {
-    background-color: #bfb9ad;
 }

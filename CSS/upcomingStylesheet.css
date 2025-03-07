@@ -1,103 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
-
-body {
-    background-color: #E7E5DF;
-    margin: 0;
-}
-
 h1 {
-    font-family: "Black Ops One", serif;
-    font-weight: 400;
-    font-size: 6rem;
-    align-self: center;
-    margin: auto;
     color: #393E41;
 }
 
-.title {
-    height: 12rem;
+.title-box {
     background-color: #BBE6E4;
-    display: flex;
 }
 
-.upcoming-comps {
+.main-content {
     background-color: #BBE6E4;
     border-color: #393E41;
     border-width: 5px;
     border-style: solid;
-    margin: 100px 10vw 100px 10vw;
-    padding: 2.5%;
-    border-radius: 50px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
 }
 
-.upcoming-comp {
-    display: flex;
-    align-items: center;
-}
-
-.upcoming-comp:first-child {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.upcoming-comp:last-child {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.upcoming-comp:nth-child(2n+1) {
+.list-entry:nth-child(2n+1) {
     background-color: #4A8FE7;
 }
 
-.upcoming-comp:nth-child(2n) {
+.list-entry:nth-child(2n) {
     background-color: #305fb8;
 }
 
-.upcoming-comp-name {
-    font-family: "Black Ops One", serif;
-    font-weight: 400;
-    font-size: 2rem;
-    color: #E7E5DF;
-    margin: 10px;
-    flex-grow: 1;
-    text-align:left;
+.instructions {
+    color: #393E41;
 }
 
-.upcoming-comp-info {
-    font-family: "Radio Canada", serif;
-    font-weight: 400;
-    font-size: 1.5rem;
+.entry-name {
     color: #E7E5DF;
-    margin: 10px 30px 10px 30px;
 }
 
-.upcoming-comp-more-info {
-    font-family: "Radio Canada", serif;
-    font-weight: 500;
-    font-size: 1.5rem;
+.entry-info {
+    color: #E7E5DF;
+}
+
+.entry-button {
     background-color: #FE7F2D;
-    border-radius: 10px;
-    border-style: hidden;
-    border-bottom-style: solid;
-    border-width: 5px;
     border-color: #cf5d15;
     color: #E7E5DF;
-    display: inline-block;
-    padding: .25rem;
-    transition: 0.1s;
-    margin: 0px 30px 8px 30px;
-    align-self: flex-end;
 }
 
-.upcoming-comp-more-info:hover {
-    border-width: 2px;
-}
-
-.upcoming-comp-more-info:active {
+.entry-button:active {
     background-color: #cf5d15;
 }
 

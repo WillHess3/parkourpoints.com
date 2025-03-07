@@ -3,13 +3,15 @@
     <head>
         <link rel="stylesheet" href="CSS/athletesStylesheet.css" />
         <link rel="stylesheet" href="CSS/headerStylesheet.css" />
+        <link rel="stylesheet" href="CSS/listStylesheet.css" />
+        <link rel="stylesheet" href="CSS/listStructureStylesheet.css" />
 
         <script src="Javascript/headerButtons.js"></script>
         <script src="Javascript/athleteSearch.js"></script>
         <script src="Javascript/loadGoogleSheetsData.js"></script>
     </head>
     <body>
-        <div class="title">
+        <div class="title-box">
             <h1>Athletes</h1>
         </div>
         <div class="header">
@@ -18,13 +20,14 @@
             <button class="header-button" onclick="goToLink('leaderboards.html')">Leaderboards</button>
             <button class="header-button" onclick="goToLink('athletes.html')">Athletes</button>
         </div>
-        <div class="athletes">
+        <div class="main-content">
             <h2 class="instructions"> Search for an athlete's name</h2>
-            <div class="athlete-search">
-                <input id="athlete-search-bar" />
-                <button id="athlete-search-button" onclick="onAthleteSearchClicked()">Search</button>
+            <div class="search">
+                <input class="search-bar" id="athlete-search-bar" />
+                <button class="search-button" id="athlete-search-button" onclick="onAthleteSearchClicked()">Search</button>
             </div>
             <div class="athlete-list" id="athlete-list">
+                <h2 class="instructions">Loading...</h2>
             </div>
         </div>
     </body>

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="../CSS/athletesStylesheet.css" />
-    <link rel="stylesheet" href="../CSS/headerStylesheet.css" />
-</head>
+    <head>
+        <link rel="stylesheet" href="../CSS/athletesStylesheet.css" />
+        <link rel="stylesheet" href="../CSS/headerStylesheet.css" />
+        <link rel="stylesheet" href="../CSS/listStylesheet.css" />
+        <link rel="stylesheet" href="../CSS/listStructureStylesheet.css" />
+    </head>
     <body>
-        <div class="title">
+        <div class="title-box">
             <h1>Athletes</h1>
         </div>
         <div class="header">
@@ -14,36 +16,36 @@
             <button class="header-button" onclick="goToLink('leaderboards.html')">Leaderboards</button>
             <button class="header-button" onclick="goToLink('athletes.html')">Athletes</button>
         </div>
-        <div class="athletes">
+        <div class="main-content">
             <h2 class="instructions"> Search for an athlete's name</h2>
-            <div class="athlete-search">
-                <input id="athlete-search-bar" />
-                <button id="athlete-search-button" onclick="onAthleteSearchClicked()">Search</button>
+            <div class="search">
+                <input class="search-bar" id="athlete-search-bar" />
+                <button class="search-button" id="athlete-search-button" onclick="onAthleteSearchClicked()">Search</button>
             </div>
             <div class="athlete-list" id="athlete-list">
-                <div class="athlete">
-                    <h3 class="athlete-name">Lorem ipsum</h3>
-                    <a href="gym.html"><p class="athlete-info"><strong>Gym:</strong> tempor</p></a>
-                    <p class="athlete-info"><strong>Parkour Points:</strong> 10</p>
-                    <button class="view-stats-button" onclick="viewAthleteProfile()">View Stats</button>
+                <div class="list-entry">
+                    <h3 class="entry-name">Lorem ipsum</h3>
+                    <a href="gym.html"><p class="entry-info"><strong>Gym:</strong> tempor</p></a>
+                    <p class="entry-info"><strong>Parkour Points:</strong> 10</p>
+                    <button class="entry-button" onclick="viewAthleteProfile()">View Stats</button>
                 </div>
-                <div class="athlete">
-                    <h3 class="athlete-name">dolor sit</h3>
-                    <a href="gym.html"><p class="athlete-info"><strong>Gym:</strong> incididunt ut labore</p></a>
-                    <p class="athlete-info"><strong>Parkour Points:</strong> 100</p>
-                    <button class="view-stats-button" onclick="viewAthleteProfile()">View Stats</button>
+                <div class="list-entry">
+                    <h3 class="entry-name">dolor sit</h3>
+                    <a href="gym.html"><p class="entry-info"><strong>Gym:</strong> incididunt ut labore</p></a>
+                    <p class="entry-info"><strong>Parkour Points:</strong> 100</p>
+                    <button class="entry-button" onclick="viewAthleteProfile()">View Stats</button>
                 </div>
-                <div class="athlete">
-                    <h3 class="athlete-name">consectetur adipiscing</h3>
-                    <a href="gym.html"><p class="athlete-info"><strong>Gym:</strong> et</p></a>
-                    <p class="athlete-info"><strong>Parkour Points:</strong> 0</p>
-                    <button class="view-stats-button" onclick="viewAthleteProfile()">View Stats</button>
+                <div class="list-entry">
+                    <h3 class="entry-name">consectetur adipiscing</h3>
+                    <a href="gym.html"><p class="entry-info"><strong>Gym:</strong> et</p></a>
+                    <p class="entry-info"><strong>Parkour Points:</strong> 0</p>
+                    <button class="entry-button" onclick="viewAthleteProfile()">View Stats</button>
                 </div>
-                <div class="athlete">
-                    <h3 class="athlete-name">sed do eiusmod</h3>
-                    <a href="gym.html"><p class="athlete-info"><strong>Gym:</strong> dolore magna</p></a>
-                    <p class="athlete-info"><strong>Parkour Points:</strong> 69</p>
-                    <button class="view-stats-button" onclick="viewAthleteProfile()">View Stats</button>
+                <div class="list-entry">
+                    <h3 class="entry-name">sed do eiusmod</h3>
+                    <a href="gym.html"><p class="entry-info"><strong>Gym:</strong> dolore magna</p></a>
+                    <p class="entry-info"><strong>Parkour Points:</strong> 69</p>
+                    <button class="entry-button" onclick="viewAthleteProfile()">View Stats</button>
                 </div>
             </div>
         </div>

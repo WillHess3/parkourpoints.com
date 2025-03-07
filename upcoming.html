@@ -3,13 +3,15 @@
     <head>
         <link rel="stylesheet" href="CSS/upcomingStylesheet.css" />
         <link rel="stylesheet" href="CSS/headerStylesheet.css" />
+        <link rel="stylesheet" href="CSS/listStylesheet.css" />
+        <link rel="stylesheet" href="CSS/listStructureStylesheet.css" />
 
         <script src="Javascript/headerButtons.js"></script>
         <script src="Javascript/upcoming.js"></script>
         <script src="Javascript/loadGoogleSheetsData.js"></script>
     </head>
     <body>
-        <div class="title">
+        <div class="title-box">
             <h1>Upcoming Competitions</h1>
         </div>
         <div class="header">
@@ -18,8 +20,9 @@
             <button class="header-button" onclick="goToLink('leaderboards.html')">Leaderboards</button>
             <button class="header-button" onclick="goToLink('athletes.html')">Athletes</button>
         </div>
-        <div class="upcoming-comps">
+        <div class="main-content">
             <div class="upcoming-comps-list" id="upcoming-comps-list">
+                <h3 class="instructions">Loading...</h3>
             </div>
         </div>
     </body>

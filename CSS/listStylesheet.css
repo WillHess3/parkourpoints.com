@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
+
+.list-entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-entry:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.list-entry:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.entry-name {
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    margin: 10px;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.entry-info {
+    font-family: "Radio Canada", serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    margin: 10px 10px 10px 10px;
+    align-self: center;
+}
+
+.entry-button {
+    font-family: "Radio Canada", serif;
+    font-weight: 500;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    border-radius: 10px;
+    border-style: hidden;
+    border-bottom-style: solid;
+    border-width: 5px;
+    display: inline-block;
+    padding: .25rem;
+    transition: 0.1s;
+    margin: 0px 10px 8px 10px;
+    align-self: flex-end;
+}
+
+.entry-button:hover {
+    border-width: 2px;
+}

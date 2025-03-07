@@ -15,7 +15,7 @@ async function buildPage() {
 
     //basic info
     document.getElementById("title").textContent = athleteData["name"];
-    document.getElementById("athlete-name").textContent = athleteData["name"];
+    document.getElementById("athlete-name").innerHTML = "<strong>Name: </strong>" + athleteData["name"];
 
     document.getElementById("gym-link").onclick = goToGym(gym["gym id"]);
     document.getElementById("gym").innerHTML = "<strong>Gym:</strong> " + gym["gym name"];
@@ -110,6 +110,6 @@ function goToGym(gymID) {
     sessionStorage.setItem("gymID", parseInt(gymID));
 }
 
-function seeFullLeaderboard(leaderboardID) {
-    sessionStorage.setItem("leaderboardID", leaderboardID);
+function seeFullLeaderboard(competitionID) {
+    sessionStorage.setItem("competitionID", parseInt(competitionID));
 }

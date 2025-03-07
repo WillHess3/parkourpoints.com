@@ -37,6 +37,7 @@ async function buildGymPage() {
     const upcomingComps = getUpcomingCompetitions(upcomingCompsData);
 
     gymName = gymInfo["gym name"];
+    gymWebsite = gymInfo["website"];
 
     document.getElementById("title").textContent = gymName;
     document.getElementById("gym-title").textContent = gymName;
@@ -44,9 +45,9 @@ async function buildGymPage() {
     document.getElementById("location").innerHTML = "<strong>Location:</strong> " + gymInfo["location"];
     document.getElementById("competitions-hosted").innerHTML = "<strong>Competitions Hosted:</strong> " + hostedCompetitions.length;
     document.getElementById("affiliated-athletes").innerHTML = "<strong>Affiliated Athletes:</strong> " + gymInfo["affiliated athletes id list"].split(",").length;
+    document.getElementById("website").innerHTML = "<strong>Website: </strong>" + gymWebsite;
+    document.getElementById("website-link").href = gymWebsite;
     document.getElementById("gym-picture").src = gymInfo["gym picture"];
-
-    gymWebsite = gymInfo["website"];
 
     for (let i = 0; i < hostedCompetitions.length; i++) {
         createLeaderboard(hostedCompetitions[i]);
@@ -97,7 +98,7 @@ function createLeaderboard(competition) {
         type = "Style";
     }
 
-    document.getElementById("leaderboard-list").innerHTML += `<div class="competition"><h3 class="competition-name">${name}</h3><p class="competition-info"><strong>Date:</strong> ${date}</p><p class="competition-info"><strong>Type:</strong> ${type}</p><button class="view-leaderboard-button" onclick="viewFullLeaderboard(${competitionID})">View Leaderboard</button></div>`;
+    document.getElementById("leaderboard-list").innerHTML += `<div class="list-entry competition"><h3 class="entry-name competition-name">${name}</h3><p class="entry-info competition-info"><strong>Date:</strong> ${date}</p><p class="entry-info competition-info"><strong>Type:</strong> ${type}</p><button class="entry-button view-leaderboard-button" onclick="viewFullLeaderboard(${competitionID})">View Leaderboard</button></div>`;
 }
 
 function getAffiliatedAthletes(athletesData) {
@@ -116,7 +117,7 @@ function createAthlete(athlete) {
     let name = athlete["name"];
     let parkourPoints = athlete["parkour points"];
 
-    document.getElementById("affiliated-athletes-list").innerHTML += `<div class="athlete"><h3 class="athlete-name">${name}</h3><p class="athlete-info"><p class="athlete-info"><strong>Parkour Points:</strong> ${parkourPoints}</p><button class="view-stats-button" onclick="viewAthleteProfile(${athleteID})">View Stats</button></div>`;
+    document.getElementById("affiliated-athletes-list").innerHTML += `<div class="list-entry athlete"><h3 class="entry-name athlete-name">${name}</h3><p class="entry-info athlete-info"><strong>Parkour Points:</strong> ${parkourPoints}</p><button class="entry-button view-stats-button" onclick="viewAthleteProfile(${athleteID})">View Stats</button></div>`;
 }
 
 function getUpcomingCompetitions(upcomingCompsData) {
@@ -144,5 +145,5 @@ function createUpcomingComp(upcomingComp) {
         type = "Style";
     }
 
-    document.getElementById("upcoming-comps-list").innerHTML += `<div class="upcoming-comp"><h3 class="upcoming-comp-name">${name}</h3><p class="upcoming-comp-info"><strong>Type:</strong> ${type}</p><p class="upcoming-comp-info"><strong>Date:</strong> ${date}</p><button class="upcoming-comp-more-info" onclick="viewFullUpcomingComp(${upcomingCompID})">More Info</button></div>`;
+    document.getElementById("upcoming-comps-list").innerHTML += `<div class="list-entry upcoming-comp"><h3 class="entry-name upcoming-comp-name">${name}</h3><p class="entry-info upcoming-comp-info"><strong>Type:</strong> ${type}</p><p class="entry-info upcoming-comp-info"><strong>Date:</strong> ${date}</p><button class="entry-button upcoming-comp-more-info" onclick="viewFullUpcomingComp(${upcomingCompID})">More Info</button></div>`;
 }

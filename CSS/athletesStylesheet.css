@@ -1,87 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
 
-body {
-    background-color: #E7E5DF;
-    margin: 0;
-}
-
 h1 {
-    font-family: "Black Ops One", serif;
-    font-weight: 400;
-    font-size: 6rem;
-    align-self: center;
-    margin: auto;
     color: #E7E5DF;
 }
 
-.title {
-    height: 12rem;
+.title-box {
     background-color: #393E41;
-    display: flex;
 }
 
-.athletes {
+.main-content {
     background-color: #393E41;
-    margin: 100px 10vw 100px 10vw;
-    padding: 2.5%;
-    border-radius: 50px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
 }
 
 .instructions {
-    font-family: "Radio Canada", serif;
-    font-weight: 600;
-    font-size: 2rem;
     color: #E7E5DF;
-    margin-bottom: 30px;
 }
 
-.athlete-search {
-    display: flex;
-    justify-content: center;
-}
-
-#athlete-search-bar {
-    width: 60rem;
-    height: 4rem;
-    font-family: "Radio Canada", serif;
-    font-weight: 600;
+.search-bar {
     color: #393E41;
     background-color: #E7E5DF;
-    font-size: 3rem;
     border-color: #bfb9ad;
-    border-style: solid;
-    border-radius: 10px;
-    border-width: 3px;
-    margin-right: 10px;
 }
 
-#athlete-search-button {
-    font-family: "Radio Canada", serif;
-    font-weight: 500;
-    font-size: 2rem;
+.search-button {
     background-color: #E7E5DF;
-    border-radius: 10px;
-    border-style: hidden;
-    border-bottom-style: solid;
-    border-width: 5px;
     border-color: #bfb9ad;
     color: #393E41;
-    display: inline-block;
-    align-self: flex-end;
-    margin-bottom: 2px;
-    padding: 0.75rem;
-    transition: 0.1s;
 }
 
-#athlete-search-button:hover {
+.search-button:hover {
     border-width: 2px;
 }
 
-#athlete-search-button:active {
+.search-button:active {
     background-color: #bfb9ad
 }
 
@@ -89,71 +41,29 @@ h1 {
     margin-top: 30px;
 }
 
-.athlete{
-    display:flex;
-    margin-bottom:0;
-}
-
-.athlete:first-child{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.athlete:last-child {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.athlete:nth-child(2n+1) {
+.list-entry:nth-child(2n+1) {
     background-color: #E7E5DF;
 }
 
-.athlete:nth-child(2n) {
+.list-entry:nth-child(2n) {
     background-color: #bfb9ad;
 }
 
-.athlete-name {
-    font-family: "Black Ops One", serif;
-    font-weight: 400;
-    font-size: 2rem;
+.entry-name {
     color: #393E41;
-    margin: 10px;
-    flex-grow: 1;
-    text-align: left;
 }
 
-.athlete-info {
-    font-family: "Radio Canada", serif;
-    font-weight: 400;
-    font-size: 1.5rem;
+.entry-info {
     color: #393E41;
-    margin: 10px 30px 10px 30px;
-    align-self: center;
 }
 
-.view-stats-button {
-    font-family: "Radio Canada", serif;
-    font-weight: 500;
-    font-size: 1.5rem;
+.entry-button {
     background-color: #393E41;
-    border-radius: 10px;
-    border-style: hidden;
-    border-bottom-style: solid;
-    border-width: 5px;
     border-color: #222628;
     color: #E7E5DF;
-    display: inline-block;
-    padding: .25rem;
-    transition: 0.1s;
-    margin: 0px 30px 8px 30px;
-    align-self: flex-end;
 }
 
-.view-stats-button:hover {
-    border-width:2px;
-}
-
-.view-stats-button:active {
+.entry-button:active {
     background-color: #222628
 }
 
